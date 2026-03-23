@@ -149,8 +149,3 @@ async function convertFileToType(file, type, index = 0) {
     URL.revokeObjectURL(objectURL);
     return new File([arrayBuffer], getFileName(type, index), { type });
 };
-```
-
-Alles mit `Strg+A` markieren, einfügen, dann unten auf **Commit changes** klicken. Als Commit-Message:
-```
-Fix unique filenames, sort bug, empty item loop
